@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  /* Barra lateral */
+  .sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background-color: #f0642b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+    overflow-y: auto; /* Agregar scroll si el contenido excede la altura */
+  }
+  
+  .profile-img {
+    display: block;
+    border-radius: 50%;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .sidebar nav a.active {
+    background-color: #ff8556;
+    font-weight: bold;
+  }
+  
+  .sidebar nav a:hover {
+    background-color: #ff7043;
+  }
+  
+  /* Contenido principal */
+  .content {
+    margin-left: 25%;
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .section {
+    padding: 300px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #f0642b;
+    margin-bottom: 20px;
+  }
+  
+  .item {
+    margin-bottom: 50px;
+  }
+  
+  .item-title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .item-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .item-description {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 10px 0;
+    }
+
+    .profile-img {
+      width: 50%;
+      margin-top: 10px;
+    }
+  
+    .sidebar nav a {
+      font-size: 16px;
+      width: 90%;
+    }
+  
+    .content {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .section {
+      padding: 50px 20px;
+    }
+  }
+
+  /* Icono de galería */
+.gallery-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff8556;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 100;
+}
+
+.gallery-icon:hover {
+  background-color: #ff7043;
+}
+
+/* Contenedor de la galería */
+.gallery-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.gallery-container.active {
+  display: flex;
+}
+
+/* Galería de fotos */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 5px solid white;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Botón de cerrar */
+.close-gallery {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Modal para imagen ampliada */
+.photo-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200; /* Sobre la galería */
+}
+
+.photo-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.photo-modal.active {
+  display: flex;
+  cursor: zoom-out;
+}
+
+/* Estilo del ícono de YouTube */
+#youtubeLink img {
+  transition: transform 0.2s;
+}
+
+#youtubeLink img:hover {
+  transform: scale(1.2); /* Agrandar un poco al pasar el mouse */
+}
+
+/* Estilo del ícono de Instagram */
+#insta img {
+  transition: transform 0.2s;
+}
+
+#insta img:hover {
+  transform: scale(1.2);
+}

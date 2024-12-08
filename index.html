@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="CSS/Cuerpo.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Barra lateral -->
+    <div class="sidebar">
+      <div>
+        <img src="FotoDePerfil/Ferdy.png" alt="Profile Picture" class="profile-img">
+      </div>
+      <nav>
+        <a href="#about" class="active">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Industry Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#extracurricular">Extracurricular</a>
+        <a href="#cultural-exchange">Cultural Exchange</a>
+        <a href="#work-experience">Work Experience</a>
+      </nav>
+      <!-- Otros elementos del menú -->
+      <button class="gallery-icon" id="openGallery">📷</button>
+    </div>
+
+    <div class="gallery-container" id="gallery">
+      <button class="close-gallery" id="closeGallery">✖</button>
+      <div class="gallery-grid" id="photoGrid">
+        <!-- Las fotos se insertarán aquí dinámicamente -->
+      </div>
+      <!-- Contenedor para la imagen maximizada -->
+      <div class="photo-modal" id="photoModal">
+      <img id="modalImage" alt="Expanded Photo">
+  </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">
+      <!-- About -->
+      <section id="about" class="section active">
+        <h2 style="text-align: center; font-size: 72px; font-weight: bold;">
+            <span style="color: black;">Omar</span> 
+            <span style="color: #f0642b;">Mejia</span>
+          </h2>
+          <h1 style="text-align: center;">
+          <a href="https://www.youtube.com/@ofmf10/videos" id="youtubeLink" target="_blank" style="display: inline-block; margin-top: 10px;">
+          <img src="img/youtube.png" alt="YouTube Icon" style="width: 32px; height: 32px;"></a>
+          <a href="https://www.instagram.com/fergiralica/" id="insta" target="_blank" style="display: inline-block; margin-top: 10px;">
+          <img src="img/insta.png" alt="Insta Icon" style="width: 32px; height: 32px;"></a>
+          </h1>
+          <h1 style="text-align: center;">ofmf1998@gmail.com</h1>
+          <h1 style="text-align: center;">Tegucigalpa, Honduras</h1>
+        <p>
+            Audiovisual and Advertising Communication student at Unitec, Honduras. 
+            Passionate about filmmaking, 20th century cinema, photography and Argentine rock. 
+            After an exchange program to Italy in 2015, he discovered his love for movies and embarked on 
+            his journey as a director and photographer. Back home, Mejia faced the reality that filmmaking and 
+            cinema are not as easily accessible as in Europe. Having to experience two different career paths, 
+            medicine and engineering, he then decided to face his desire to be involved in a creative setting 
+            and career. Wishing to see Honduras' filmmaking scene grow, Mejia has been honing his skills and 
+            collaborating on short films with local talents.
+        </p>
+      </section>
+
+      <!-- Contenido de secciones -->
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-title">BA in Audiovisual and Advertising Communication</div>
+            <div class="item-subtitle">Universidad Tecnológica Centroamericana (UNITEC), Honduras (04/2021 – expected graduation 2025)</div>
+            <div class="item-description">
+              - Courses include advertising, content creation, commercial photography, video editing, animation, screenwriting.
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">BA in Film and Television Engineering</div>
+            <div class="item-subtitle">Universidad Politécnica de la Innovación (UPI) (01/2020 - 06/2020)</div>
+            <div class="item-description">
+              - Courses taken: film history, art direction, photography, cinematography.
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">BA in Medicine</div>
+            <div class="item-subtitle">Universidad Católica de Honduras (UNICAH) (05/2018 - 12/2019)</div>
+          </div>
+          <div class="item">
+            <div class="item-title">BA in Industrial Engineering</div>
+            <div class="item-subtitle">Universidad Autonoma de Honduras (UNAH) (1/2017 - 3/2018)</div>
+          </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Industry Experience</h2>
+        <div class="item">
+            <div class="item-title">Script Supervisor, Production Assitant</div>
+            <div class="item-subtitle">Homo Deus, Fosforito Films, Honduras (09/2024 - ongoing)</div>
+            <div class="item-description">
+              - Meet with director and director of photography to keep a cohesive shot list that optimizes our production time and schedule
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">Technical Director</div>
+            <div class="item-subtitle">Origen de Maje, UNITEC, Honduras (08/2024 - 09/2024)</div>
+            <div class="item-description">
+              - Supervised direction of photography and sound direction
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">Art Department Assistant</div>
+            <div class="item-subtitle">Catrachismo Puro: Salva-Vida, Oriental Films, Honduras (08/2024)</div>
+            <div class="item-description">
+              - Worked closely with art director on set, props and improving the work flow on site
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">Production Assistant</div>
+            <div class="item-subtitle">Eva, Fosforito Films, Honduras (05/2024 - ongoing)</div>
+            <div class="item-description">
+              - Maintained all departments on the same page during production, and executed keep scheduling on track
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">Actor, Assistant director, Production Assistant</div>
+            <div class="item-subtitle">Fusil Olímpico, Manuel Muñoz, Honduras (02/2024-ongoing)</div>
+            <div class="item-description">
+              - Acted as a character on the film.
+              - Contributed to production team, helping with shooting plan, schedule, catering and logistics.
+            </div>
+          </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="item">
+            <a href="https://www.youtube.com/watch?v=gDzX40008wo" id="Valor" target="_blank" style="display: inline-block; margin-top: 10px;">
+            <div class="item-title">Valor Agregado</div>
+            </a>
+            <div class="item-subtitle">Short Film, Honduras (04/2024)</div>
+            <div class="item-description">
+              - Director, screenwriter, director of photography and editor
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.youtube.com/watch?v=CVItUPp-qdc" id="Muñequita" target="_blank" style="display: inline-block; margin-top: 10px;">
+            <div class="item-title">Muñequita
+            </a>
+            </div>
+            <div class="item-subtitle">Short Film, Honduras (08/2023)</div>
+            <div class="item-description">
+              - Director of photography, producer and gaffer
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.youtube.com/watch?v=ZSGtTf08hTY" id="Must" target="_blank" style="display: inline-block; margin-top: 10px;">
+            <div class="item-title">I Must Become</div>
+            </a>
+            <div class="item-subtitle">Short Film, Honduras (05/2023)</div>
+            <div class="item-description">
+              - Director, screenwriter, sound, photography director and editor
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.youtube.com/watch?v=_mF9eB4VBNA&t=12s" id="Jazz" target="_blank" style="display: inline-block; margin-top: 10px;">
+            <div class="item-title">AllThatJazz</div>
+            </a>
+            <div class="item-subtitle">Short Film, Honduras (04/2023)</div>
+            <div class="item-description">
+              - Director, screenwriter, sound, photography director and editor
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.youtube.com/watch?v=EuLwCynS_TU&t=9s" id="Toast" target="_blank" style="display: inline-block; margin-top: 10px;">
+            <div class="item-title">Algo Sobre Las Avo Toast</div>
+            </a>
+            <div class="item-subtitle">Short Film, Honduras (03/2023)</div>
+            <div class="item-description">
+              - Director, screenwriter, sound, photography director and editor
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://www.youtube.com/watch?v=3sLV5GK63Sg" id="Lucido" target="_blank" style="display: inline-block; margin-top: 10px;">
+            <div class="item-title">Lucidez</div>
+            </a>
+            <div class="item-subtitle">Music video, Honduras (03/2020)</div>
+            <div class="item-description">
+              - Director, screenwriter, sound, photography director and editor
+            </div>
+          </div>
+          <div class="item">
+            <a href="https://youtu.be/NRRdAPXey7k?si=MArpllbC9ibmVXOC" id="Sobredosis" target="_blank" style="display: inline-block; margin-top: 10px;">
+            <div class="item-title">Sobredosis de TV</div>
+            </a>
+            <div class="item-subtitle">Music video, Honduras (12/2018)</div>
+            <div class="item-description">
+              - Director of Photography and Assistant Editor
+            </div>
+          </div>
+      </section>
+
+      <section id="extracurricular" class="section">
+        <h2>Extracurricular</h2>
+        <div class="item">
+            <div class="item-title">Taller Técnico de Cámara</div>
+            <div class="item-subtitle">Argentina (03/2024)</div>
+            <div class="item-description">
+              - Online workshop on the different capabilities and functions of cameras
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">Taller de Realización Alternativa</div>
+            <div class="item-subtitle">(Atelier), Honduras (02 - 04/2023)</div>
+            <div class="item-description">
+              - On-site workshop of diferent ways of filming
+              - Hands-on experience at filming a scene and building a story around it
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">Masterclass</div>
+            <div class="item-subtitle">Online Courses (06/2020 - 12/2020)</div>
+            <div class="item-description">
+              - Online workshop of David Lynch, Werner Herzog, Martin Scorsese,
+                Judd Apatow, Spike Lee, Annie Leibbovitz, Aaron Sorkin, Danny Elfman,
+                Hans Zimmer and Neil Gaiman.
+            </div>
+          </div>
+      </section>
+      
+      <section id="cultural-exchange" class="section">
+        <h2>Cultural Exchange</h2>
+        <div class="item">
+            <div class="item-title">Generación de Empresas I y II</div>
+            <div class="item-subtitle">Colombia (10/2023)</div>
+            <div class="item-description">
+              - Hands-on experience at starting your own business using class example to create
+                a startup company, pitching ideas, giving presentations and public speaking.
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">American Field Service (AFS Intercultural Programs)</div>
+            <div class="item-subtitle">Italy (09/2015 - 07/2016)</div>
+            <div class="item-description">
+              - 10 month Intercultural exchange progam in Modena, Italy.
+              - Enrolled in final year of school, learned the language and participated in cultural activities
+            </div>
+          </div>
+      </section>
+
+      <section id="work-experience" class="section">
+        <h2>Work Experience</h2>
+        <div class="item">
+            <div class="item-title">Warehouse and Pharmacy Assistant</div>
+            <div class="item-subtitle">Centro Hondureño del Niño Quemado (CEHNIQ), Honduras (10/2020 - 06/2022)</div>
+            <div class="item-description">
+              - Cataloging pharmaceutical supplies, maintainance of medical equipment and re-stocking hospital supplies.
+            </div>
+          </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // Función para mostrar las secciones y actualizar el menú
+    function showSection(sectionId) {
+    // Ocultar todas las secciones
+    document.querySelectorAll('.section').forEach(section => {
+    section.classList.remove('active');
+    });
+
+    // Mostrar la sección seleccionada
+    document.getElementById(sectionId).classList.add('active');
+
+    // Actualizar el menú activo
+    document.querySelectorAll('.sidebar nav a').forEach(link => {
+    link.classList.remove('active');
+    });
+    document.querySelector(`.sidebar nav a[href="#${sectionId}"]`).classList.add('active');
+    }
+
+    // Evento para actualizar el menú al hacer scroll
+    window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.section');
+    const links = document.querySelectorAll('.sidebar nav a');
+  
+    let currentSection = '';
+
+    sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 2) {
+      currentSection = section.getAttribute('id');
+    }
+    });
+
+    links.forEach((link) => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').substring(1) === currentSection) {
+      link.classList.add('active');
+    }
+    });
+    });
+
+    // Abrir y cerrar la galería
+    document.getElementById('openGallery').addEventListener('click', () => {
+    document.getElementById('gallery').classList.add('active');
+    });
+
+    document.getElementById('closeGallery').addEventListener('click', () => {
+    document.getElementById('gallery').classList.remove('active');
+    });
+
+    // Agregar imágenes dinámicamente
+    const photoGrid = document.getElementById('photoGrid');
+
+    // Simula la importación desde un folder con una lista de URLs
+    const photos = [
+      'img/1.jpg',
+      'img/2.jpg',
+      'img/3.jpg',
+      'img/4.png',
+      'img/5.jpg',
+      'img/6.jpg',
+      'img/7.jpg',
+    ];
+
+    photos.forEach(photo => {
+      const img = document.createElement('img');
+      img.src = photo;
+      img.alt = 'Photo';
+      photoGrid.appendChild(img);
+    });
+
+    // Mostrar imagen maximizada al hacer clic
+    const photoModal = document.getElementById('photoModal');
+    const modalImage = document.getElementById('modalImage');
+
+    photoGrid.addEventListener('click', (e) => {
+    if (e.target.tagName === 'IMG') {
+    modalImage.src = e.target.src; // Asigna la foto al modal
+    photoModal.classList.add('active');
+    }
+    });
+
+    // Cerrar modal al hacer clic fuera de la imagen
+    photoModal.addEventListener('click', () => {
+    photoModal.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
